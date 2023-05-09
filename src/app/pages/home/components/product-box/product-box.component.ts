@@ -8,14 +8,7 @@ import {Product} from 'src/app/models/product.model';
 })
 export class ProductBoxComponent implements OnInit {
   @Input() fullWidthMode = false;
-  product: Product |undefined = {
-    id:1,
-    title: 'snickers',
-    price:150,
-    category:'shoes',
-    description:'Description',
-    image:'https://via.placeholder.com/150'
-  };
+  @Input() product: Product | undefined 
 
   // In order to Emit this Product we need to create EventEmitter
   //  This the way how to communicate with the child and the parent component.
