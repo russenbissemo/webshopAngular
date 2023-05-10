@@ -21,11 +21,13 @@ export class ProductsHeaderComponent implements OnInit{
   onSortUpdated(newSort:string): void {
     this.sort = newSort;
     this.sortChange.emit(newSort);
+    console.log( this.sort)
 
   }
   onItemsUpdated(count: number): void {
     this.itemsShowCount = count;
     this.itemsCountChange.emit(count)
+    console.log( this.itemsShowCount)
 
   }
   onColumnsUpdated(colsNum: number): void {
